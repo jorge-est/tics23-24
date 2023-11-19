@@ -1,0 +1,329 @@
+/*importamos o tipo de letra "bangers" de google fonts. Buscar titorial de como importanr fontes de Google Fonts*/
+
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
+/*Hacemos un reset a todos os espazos que deixa o navegador por defecto* */
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* Estilos principais */
+body {
+	background-image: url(img/bg.png)
+}
+
+h1 {
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	color: rgb(79, 176, 255);
+	font-size: 80px;
+}
+
+h2 {
+	font-size: 1.8rem; /*(tamaño 16 pixeles) por 1.8, onde rem=16 pix*/
+	text-align: center;
+	text-transform: uppercase; /*transforma todas as letras de h2 en maísculas*/
+	font-weight: 500; /*ancho da letra*/
+	padding-bottom: 50px; /*deixa un espacio por debaixo de 50px*/
+	font-family: 'Bangers'; /*tipo de letra que importamos de google fonts*/
+	color: #000000;
+}
+
+h3 {
+	font-size: 1.4rem;
+	text-align: center;
+	text-transform: uppercase;
+	padding-bottom: 20px;
+	font-weight: 400;
+	font-family: 'Bangers';
+	color: #000000;
+}
+
+p {
+	font-size: 1rem;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	line-height: 1.7em; /*salto de línea*/
+}
+
+a {
+	text-decoration: none;
+} /* enlaces sen a liña que ten por defecto, e decir lle quito a liña*/
+
+
+/* Utility Classes */
+
+.container {
+	margin: auto; /* 0px de marxen vertical, centrado horizontalmente */
+	max-width: 1300px; /*coloca o ancho de 1300px como valor máximo do container*/
+	overflow: auto;
+	padding: 0px 20px;
+	text-align: center;
+}
+
+.bottomContainer {
+	margin: auto; 
+	max-width: 1300px; 
+	overflow: auto;
+	vertical-align: bottom;
+	text-align: center;
+}
+
+.large {
+	font-size: 20px;
+}
+
+.logo {
+	float: left;
+}
+
+.texto-contacto{
+	font-size: 16px;
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.medium{
+	font-size: 19px;
+}
+
+.btn {
+	display: inline-block;
+	font-size: 15px;
+	padding: 15px 40px;
+	letter-spacing: 1px; /*separación entre letras*/
+	font-family: 'Bangers';
+}
+
+.btn-outline {
+	background: transparent;
+	border: 1px solid #009ed8; /*color blanco*/
+	color: #2cbcff;
+	text-transform: uppercase;
+	font-weight: 300;
+}
+
+.btn-outline:hover { /*cando pase o ratón por encima que me cambie os cores de fondo e das letras*/
+	background: #07f3ff; /*cor branco en Hex*/
+	color: #0400d5;;/*cor negro en Hex*/
+}
+
+/* Navbar: define o que fai se o tamaño e moi grande*/
+#navbar {
+	overflow: auto; 
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+#navbar a {
+	color: #000; /*cor do enlace de cor negro*/
+}
+
+#navbar img {
+	width: 120px;
+}
+
+#navbar ul {
+	float: right;
+	list-style: none; /*lle quitamos os puntos a lista non ordeada*/
+}
+
+#navbar ul li {
+	float: left;
+}
+
+@keyframes textgrow {
+	0%
+	{
+		font-size: 0.8em	
+	}
+	
+	100%
+	{
+		font-size: 1.5em	
+	}
+}
+
+@keyframes textshrink {
+	0%
+	{
+		font-size: 1.5em	
+	}
+	
+	100%
+	{
+		font-size: 0.8em	
+	}
+}
+
+#navbar ul li a { 
+	display: block;
+	text-align: center;
+	font-size: 26px;
+	padding-right: 40px;
+	padding-top: 30px;
+	font-family: 'Bangers';
+	color: black;
+	animation-name: textShrink;
+	animation-duration: 0.5s;
+	animation-fill-mode: forwards;
+}
+
+#navbar li:hover {
+	animation-name: textGrow;
+	animation-duration: 0.5s;
+}
+
+#mainpage 
+{
+	display: flex;
+	justify-content: center;
+}
+
+#centerbox 
+{
+	background-color: rgba(0, 0, 0, 0.2);
+	margin-right: 100px;
+	margin-left: 100px;
+	width: 60%;
+	text-align: center;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+	justify-content: center;
+}
+
+#showcase {
+ 	background-image: url("img/fondo6.png");
+ 	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover; /*Scales the image (while preserving its ratio) to the smallest possible size to fill the container*/
+	height: 550px; /*altura da foto principal*/
+	text-align: center;
+	padding: 100px;
+}
+#showcase .btn {
+	margin-top: 180px;   /*distancia dende enriba para poñer o botón de proxectos na foto principal*/
+}
+
+/* Projects */
+#projects {
+	padding: 80px 0;
+}
+
+.projects-row {
+	display: flex;
+
+	/*crea un display axustando as fotos nunha liña, se non o utilizo se ven en filas*/
+}
+
+.projects-row img {
+	width: 100%; /*axusta ao 100% a imaxe*/
+}
+
+#filler {
+	height: 100px;
+}
+
+/* About */
+#about {
+	padding: 80px 0;
+	/* background: #f9f9f9; */
+}
+
+.about-row {
+	width: auto;
+	text-align: center;
+	padding: 50px;
+	vertical-align:middle;
+}
+
+.about-row-experience {
+	width: 45%;
+	background-color: rgba(255, 255, 255, 0.3);
+	border-radius: 10px;
+	padding: 20px 20px;
+	float: left;
+	text-align: center;
+	
+}
+
+.about-row-me {
+	width: 45%;
+	background-color: rgba(255, 255, 255, 0.3);
+	border-radius: 10px;
+	padding: 20px 20px;
+	float: right;
+	text-align: center;
+}
+
+
+/* Contact */
+#contact {
+	padding: 80px 0;
+}
+
+.contact-row {
+	display: flex;
+	background-color: rgba(245, 245, 245, 0.3);
+	border-radius: 10px;
+}
+.contact-row-icon {
+	width: 33%;
+	text-align: center;
+}
+
+.contact-row-icon img {
+	height: 60px;
+}
+
+/* Footer */
+#mainfooter {
+	background: #f9f9f9;
+	text-align: center;
+	padding: 30px;
+}
+
+#cabeceiraprincipal {
+	background-color: rgba(245, 245, 245, 0.8);
+	position: fixed;
+	overflow: hidden;
+	border-bottom: 4px solid rgba(49, 49, 49, 0.6);
+	text-align: center;
+	width: 100%;
+}
+
+.secreto {
+	opacity: 0;
+}
+
+.secreto:hover {
+	opacity: 0.4;
+}
+
+.dobleColumna {
+	float: left;
+	width: auto;
+	vertical-align: middle;
+	text-align: center;
+}
+
+.containerSecreto
+{
+	float: left;
+	width: 33%;
+	height: auto;
+	margin-left: 100px;
+	margin-right: 100px;
+	padding: 30px 30px;
+	background-color: rgba(255, 255, 255, 0.3);
+	border-radius: 20px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+#containerText
+{
+	vertical-align: middle;
+	font-size: 1.8rem;
+	color: rgb(227, 250, 255);
+}

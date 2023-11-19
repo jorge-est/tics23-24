@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="gl">
+    <head>
+        <meta charset="UTF-8" />
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge" /> <!-- o atributo ten que ver coa compatibilidade do navegador onde se consulta a páxina web (http-equiv=”X-UA-Compatible”), e onde no atributo content, o valor ie=edge fai referencia ao antigo navegador Internet Explorer-->
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><!-- A metaetiqueta da ventana gráfica indica que o sitio web seguirá o ancho do dispositivo no que esté o usuario, xa sexa un móbil ou o escritorio-->
+		
+		<link rel="stylesheet" href="../style.css" />
+		<link rel="stylesheet" media="screen and (max-width:768px)" href="../mobile.css" /> <!-- Cando a pantalla e menor a 768px toma a referencia de esta stylesheet, así customizamos para o móbil se queremos cambiar o layout-->
+		
+		<title>Segredo!!</title>
+    </head>
+
+    <body style="background-image: url(images/background.gif);">
+        <header id="cabeceiraprincipal" style="background-color: black; border-bottom: 4px solid rgba(209, 209, 209, 0.6); position: relative;">
+			<nav id="navbar">
+				<div class="container">
+					<a href="#showcase" class="logo"><img src="../img/blahajlogo.png" alt="Logotipo"/></a>
+					<ul>
+						<li><a href="../index.html" style="color: whitesmoke;">Volver</a></li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+
+        <div id="mainpage" style="padding-top: 10px;">
+            <h1>Páxina Segreda!</h1>
+        </div>
+
+        <div class="dobleColumna">
+            <div class="containerSecreto">
+                <p id="containerText">
+                    Atopaches a miña páxina!  
+                </p>
+                <p id="containerText">
+                    O meu segredo é que perdín o pendrive no que tiña gardado esta páxina web e tiven que volver a empezar
+                </p>
+            </div>
+            <div class="containerSecreto" style="float: right; width: auto; height: auto;">
+                <iframe width="560" height="315" 
+                        src="https://www.youtube.com/embed/tEi7SWpCuCQ?si=4d0oCuEjG4emz255" 
+                        title="YouTube video player" frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </body>
+</html>

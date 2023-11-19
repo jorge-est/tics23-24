@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+
+<html lang="gl">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" /> <!-- o atributo ten que ver coa compatibilidade do navegador onde se consulta a páxina web (http-equiv=”X-UA-Compatible”), e onde no atributo content, o valor ie=edge fai referencia ao antigo navegador Internet Explorer-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" /><!-- A metaetiqueta da ventana gráfica indica que o sitio web seguirá o ancho do dispositivo no que esté o usuario, xa sexa un móbil ou o escritorio-->
+		
+		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" media="screen and (max-width:768px)" href="mobile.css" /> <!-- Cando a pantalla e menor a 768px toma a referencia de esta stylesheet, así customizamos para o móbil se queremos cambiar o layout-->
+		
+		<title>Benvidos</title>
+	
+	</head>
+	
+	<body>
+		<header id="cabeceiraprincipal">
+			<nav id="navbar">
+				<div class="container">
+					<a href="#showcase" class="logo"><img src="img/blahajlogo.png" alt="Logotipo"/></a>
+					<ul>
+						<li><a href="secreto/index.html"><div class="secreto">(?)</div></a></li>
+						<li><a href="#projects">Proxectos</a></li>
+						<li><a href="#about">Acerca de min</a></li>
+						<li><a href="#contact">Contacto</a></li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+
+		<div id="showcase"></div>
+		
+		<div id="mainpage">			
+			<div id="centerbox">
+			
+			<section id="projects">
+				<div class="container">
+					<h2>Proxectos </h2>
+					<div class="projects-row">
+						<div class="projects-row-detail"> 
+							<a href="https://jorge-est.github.io/juego-de-tic/"> <img src="img/prox_1.png" /> </a> 
+						</div>
+						<div class="projects-row-detail">
+							<img src="img/prox_4.png"/>
+						</div>
+						<div class="projects-row-detail">
+							<a href="https://github.com/codemonsters/laboratorio-23-24"><img src="img/prox_2.png"/></a>
+						</div>
+					</div>
+					
+					<div class="projects-row">
+						<div class="projects-row-detail"> 
+							<img src="img/prox_6.png" />
+						</div>
+						<div class="projects-row-detail">
+							<a href="https://arvia.itch.io/hold-the-tower"><img src="img/prox_5.png"/></a>
+						</div>
+						<div class="projects-row-detail"> 
+							<img src="img/prox_3.png"/>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<img src="img/balls.gif" width=700px>
+
+			<section id="about">
+				<div class="container">
+					<h2>Acerca de min</h2>
+					<div class="about-row">
+						<div class="about-row-experience">
+							<h3>Experiencia</h3>
+							<p class="large">Desarrollo de contido audiovisual interactivo multimedia.</p>
+							<p class="large">Experiencia en institucións de estudo multidisciplinares.</p>
+							<p class="large">Coñecementos abundantes en nutrición e produción de restos orgánicos.</p>
+						</div>
+
+						<div class="about-row-me" style="margin-top: 5px">
+							<h3>Coñéceme</h3>
+							<p class="medium">Unha persoa creativa con grandes ambicións e experiencia en numerosos ámbitos. Gústalle crear e aprender cousas novas.</p>
+						</div>
+						
+						<div class="about-row-me" style="margin-top: 50px">
+							<h3>Software que manexo</h3>
+							<p class="medium">Blender, Unity, Tracktion, Ableton, Visual Studio Code, Godot, GIMP</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<img src="img/balls.gif" width=700px>
+
+			<section id="contact">
+				<div class="container">
+					<h2>Contacto</h2>
+					<div class="contact-row">
+						
+						<div class="contact-row-icon">
+							<img src="img/icon-address.png" alt="" />
+							<p class="texto-contacto">Groenlandia</p>
+						</div>
+						<div class="contact-row-icon">
+								<img src="img/icon-mail.png" alt="" />
+								<p class="texto-contacto">yo@gmail.com</p>
+							</div>
+							<div class="contact-row-icon">
+								<img src="img/icon-phone.png" alt="" />
+								<p class="texto-contacto">600 25 00 19</p>
+							</div>
+						</div>
+					</div>
+				</section>
+
+			</div>
+		</div>
+
+		<footer id="mainfooter">
+			<div class="container">
+				<a href="https://twitter.com/dotrajusti" class="twitter-follow-button" data-show-count="false"
+					>Follow @dotrajusti</a>
+				<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+			</div>
+		</footer>
+	</body>
+</html>
